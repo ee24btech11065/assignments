@@ -1,0 +1,329 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage[latin1]{inputenc}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+                               
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+
+\title{16. Applications of derivatives}
+\author{EE24BTECH11065 - spoorthi }
+\newpage
+\maketitle
+
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{large}
+\textbf{{Section-B JEE Main/AIEEE}}
+\end{large}
+
+
+\begin{enumerate}
+
+
+
+    \item A spherical iron ball 10$cm$ in radius is coated with a layer of ice of uniform thickness that melts at a rate of 50 $cm^3$ /min. When the thickness of ice is 5$cm$,then the rate at which the thickness of ice decreases is\hfill\sbrak{2005}
+    \begin{multicols}{4}
+    \begin{enumerate}
+        \item 
+        $\frac{1}{36\pi}$ $cm/min$. 
+        \item $\frac{1}{18\pi}$ $cm/min$. 
+        \item $\frac{1}{54\pi}$ $cm/min$. 
+        \item $\frac{5}{6\pi}$  $cm/min$. 
+        
+    \end{enumerate}
+    \end{multicols}
+
+    
+    \item If the equation $a_nx^n$ + $a$$_{n-1}x^{n-1}$ + .......... + $a_1$$x$ $=$ 0, $a_1$ $\ne$ 0, $n$$\geq$2, has a positive root $x$ = $\alpha$, then the equation $n$$a_n$$x^{n-1}$  $+$ $\brak{n-1}$$a_{n-1}$$x^{n-2}$ +....... + $a_1$ $=$0 has a positive root, which is 
+    \hfill\sbrak{2005}
+     
+    \begin{enumerate}
+    
+        
+    
+    
+        \item greater than $\alpha$
+        \item smaller than $\alpha$
+        \item greater than or equal to $\alpha$
+        \item equal to $\alpha$
+        
+        \end{enumerate}
+        
+            
+        \item The function $f(x)$ = $\frac{x}{2}$ + $\frac{2}{x}$ has a local minimum at \hfill\sbrak{2006}
+         \begin{multicols}{4}
+        \begin{enumerate}
+        
+            
+        
+         \item $x$ = 2
+        \item $x$ = -2
+        \item $x$ = 0
+        \item $x$ = 1
+        
+            
+        \end{enumerate}
+        \end{multicols}
+            
+        \item A triangular park is enclosed on two sides by a fence and on third side by a straight river bank. The two sides having fence are of same length $x$.  The maximum area enclosed by the park is \hfill\sbrak{2006}
+         \begin{multicols}{4}
+        \begin{enumerate}
+        
+            
+        
+            \item $\frac{3}{2}$$x^2$
+        \item $\sqrt{\frac{x^3}{8}}$
+        \item $\frac{1}{2}$$x^2$
+        \item $\pi$$x^2$
+    
+        \end{enumerate}
+        \end{multicols}
+            
+        \item A value of $c$ for which conclusion of Mean Value Theorem holds for the function $f(x)$ = $\log_e$ $x$ on the interval $\sbrak{1,3}$ is \hfill\sbrak{2007}
+         \begin{multicols}{4}
+        \begin{enumerate}
+        
+            
+        
+            \item $\log_3$$e$
+        \item $\log_e$3
+        \item 2$\log_3$$e$
+        \item $\frac{1}{2}$$\log_3$$e$
+
+        \end{enumerate}
+        \end{multicols}
+            
+        \item The function $f(x)$ = $\tan^{-1}\brak{\sin{x} + \cos{x}}$is an increasing function in \hfill\sbrak{2007}
+         \begin{multicols}{4}
+    
+        \begin{enumerate}
+        
+            
+        
+      \item $\brak{0,\frac{\pi}{2}}$
+        \item $\brak{\frac{-\pi}{2},\frac{\pi}{2}}$
+        \item $\brak{\frac{\pi}{4},\frac{\pi}{2}}$
+        \item $\brak{\frac{-\pi}{2},\frac{\pi}{4}}$
+        
+            
+        
+            
+        
+        \end{enumerate}
+        \end{multicols}
+            
+        \item If $p$ and $q$ are positive real numbers such that $p^2$ + $q^2$ = 1,     
+   then the maximum value of $\brak{p + q}$ is\hfill\sbrak{2007}
+         \begin{multicols}{4}
+        \begin{enumerate}
+        
+            
+
+        \item $\frac{1}{2}$
+        \item $\frac{1}{\sqrt{2}}$
+        \item $\sqrt{2}$
+        \item 2
+        \end{enumerate}
+        \end{multicols}
+            
+        \item Suppose the cubic $x^3$ - $p$$x$ + $q$ has three distinct real roots where $p$ $>$ 0 and $q$ $>$ 0. Then which one of the following holds ? \hfill\sbrak{2008}
+         
+        \begin{enumerate}
+        
+            
+        
+        \item The cubic has minima at $\sqrt{\frac{p}{3}}$ and maxima at -$\sqrt{\frac{p}{3}}$
+        \item The cubic has minima at -$\sqrt{\frac{p}{3}}$ and maxima at $\sqrt{\frac{p}{3}}$
+        \item The cubic has minima at both $\sqrt{\frac{p}{3}}$ and -$\sqrt{\frac{p}{3}}$
+        \item the cubic has maxima at both $\sqrt{\frac{p}{3}}$ and -$\sqrt{\frac{p}{3}}$
+        
+        
+        \end{enumerate}
+        
+            
+        \item How many real solutions does the equation $ x^7 + 14x^5 + 16x^3 + 30x- 560 = 0$ have ? \hfill\sbrak{2008}
+         \begin{multicols}{4}
+        \begin{enumerate}
+    
+            
+        
+            \item 7
+        \item 1
+        \item 3
+        \item 5
+        
+        \end{enumerate}
+        \end{multicols}
+            
+        \item Let $f\brak{x}$= $x$$\abs{x}$ and $g\brak{x}$ = $\sin{x}$. 
+       \begin{enumerate}
+          
+        
+    \textbf{statement-1:}  $g$$\circ$$f$ is differentiable at $x=0$ and its derivative is continuous at that point. 
+ \newline  \textbf{statement-2:  }$g$$\circ$$f$ is twice differential at $x=0$.  
+                 \hfill\sbrak{2009} 
+                  
+        
+      \end{enumerate}
+        \begin{enumerate}
+        
+            
+        
+            \item Statement-1 is true, Statement-2 is true; statement-2 is not a correct explanation for statement-1.  
+            
+        \item Statement-1 is true, Statement-2 is false.  
+        \item Statement-1 is false,Statement-2 is true.  
+        \item Statement-1 is true, Statement-2 is true;Statement-2 is a correct explanation for Statement-1.  
+
+        \end{enumerate}
+        
+            
+        \item Given $P$$\brak{x}$$=$$x^4$$+$$ ax^3+bx^2+cx+d$ such that $x = 0$ is the only real root of $P$$^\prime$$\brak{x}$ $=$$0$. If $P$$\brak{-1}$ $<$ $P$$\brak{1}$, then in the interval $\sbrak{-1,1}$ $\colon$ \hfill\sbrak{2009}
+        
+        \begin{enumerate}
+        
+            
+        
+            
+        \item $P\brak{-1}$ is not minimum but $P\brak{1}$ is the maximum of $P$. 
+        \item $P\brak{-1}$ is the minimum but $P\brak{1}$ is not the maximum of $P$. 
+        \item  Neither $P\brak{-1}$ is the  minimum nor  $P\brak{1}$ is the maximum of $P$. 
+        \item $P\brak{-1}$ is the minimum and $P\brak{1}$ is the maximum of $P$. 
+        
+        \end{enumerate}
+        
+            
+        \item The equation of the tangent to the curve $y$ = $x$ + $\frac{4}{x^2}$ , that is parallel to the $x$-axis, is\hfill\sbrak{2010}
+         \begin{multicols}{4}
+        \begin{enumerate}
+        
+            
+        
+            \item $y=1$
+        \item $y=2$
+        \item $y=3$
+        \item $y=0$
+        \end{enumerate}
+        \end{multicols}
+            
+        \item Let $f$$\colon$ $R$ $\to$ $R$ be defined by $f\brak{x}$ = 
+    
+ $\left\{ \begin{array}{rcl}
+     k-2x & \text{if} &  x\leq -1 \\ 2x+3 & \text{if} & x>-1
+     \end{array}\right.$
+        
+        
+        If $f$ has a local minimum at $x = -1$,then a possible value of $k$ is\hfill\sbrak{2010}
+         \begin{multicols}{4}
+        
+        
+        \begin{enumerate}
+        
+            
+        
+        \item 0
+        \item -$\frac{1}{2}$
+        \item -1
+        \item 1
+        
+        \end{enumerate}
+        \end{multicols}
+            
+     \item Let $f$$\colon$ $R$ $\to$ $R$ be a continuous function defined by $f\brak{x}$ = $\frac{1}{e^x + 2e^{-x}}$ \hfill\sbrak{2010}
+      
+       
+       \begin{enumerate}
+           
+           
+    \textbf{Statement-1} $\colon$ $f(c)$ = $\frac{1}{3}$ , for some $c$$\in$$R$.
+         \newline   \textbf{Statement-2}$\colon$ 0$<$$f(x)$$\leq$$\frac{1}{2\sqrt{2}}$, for all $x$$\in$ $R$
+            
+       \end{enumerate}
+       
+         
+            \begin{enumerate}
+            
+                
+            
+                \item Statement-1 is true, Statement-2 is true;Statement-2 is \textbf{not} a correct explanation for statement-1. 
+        \item Statement-1 is true, Statement-2 is false.  
+        \item Statement-1 is false, Statement-2 is true.  
+        \item Statement-1 is true,Statement 2 is true; Statement-2 is a correct explanation for statement-1. 
+    
+        
+            \end{enumerate}
+           
+            
+ \item The shortest distance between line $y-x=1$ and curve $x$=$y^2$ is \hfill\sbrak{2011}
+             \begin{multicols}{4}
+            \begin{enumerate}
+            
+                
+    \item $\frac{3\sqrt{2}}{8}$
+        \item $\frac{8}{3\sqrt{2}}$
+        \item $\frac{4}{\sqrt{3}}$
+        \item $\frac{\sqrt{3}}{4}$
+        
+            \end{enumerate}
+            \end{multicols}
+            
+    
+        
+        
+    
+    \end{enumerate}
+
+
+\end{document}
