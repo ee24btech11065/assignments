@@ -1,0 +1,118 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{3.2.16}
+\author{EE24BTECH11065 - spoorthi yellamanchali}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\textbf{Question}:\\
+The construction of triangle $ABC$, given that $BC$ = 6$cm$, $\angle C$ = 60$^\circ$ is possible when difference of $AB$ and $AC$ is equal to
+\begin{enumerate}
+    \item 3.2$cm$
+    \item 3.1$cm$
+    \item 3$cm$
+    \item 2.8$cm$
+\end{enumerate}
+
+\textbf{Solution: }
+\begin{table}[h!]    
+  \centering
+  \input{table.tex}
+  \caption{Variables Used}
+  \label{tab10.5.3.9.1}
+\end{table}
+\begin{enumerate}
+    \item  $BC$  $=$ 6$cm$
+ \item $\angle C = 60^\circ$
+  \item let $d = \abs{ AB-AC}$
+\end{enumerate}
+    
+
+    The Law of Cosines is given by:
+\[
+BC^2 = AB^2 + AC^2 - 2 \cdot AB \cdot AC \cdot \cos(\angle C)
+\]
+Given $BC = 6 \, \text{cm}$ and $\angle C = 60^\circ$, we know:
+\[
+\cos(60^\circ) = 0.5
+\]
+Let the difference between $AB$ and $AC$ be $d$, and set $AB = AC + d$.
+
+Substitute these values into the Law of Cosines equation:
+\[
+6^2 = (AC + d)^2 + AC^2 - 2(AC + d)(AC)(0.5)
+\]
+\[
+AC = \frac{36 - d^2}{2d}
+\]
+For $AC$ to be positive, $d$ $<$ 6$cm$.
+all the options satisfy the following condition.
+therefore,d can take the values 3.2$cm$,3.1$cm$,3$cm$,2.8$cm$.
+for each of the $d$ value there are different coordinates of $A$.
+
+
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\linewidth]{Figure_1.png}
+   
+   \label{stemplot}
+\end{figure}
+\end{document}  
+\end{document}
+
+
+
