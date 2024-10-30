@@ -1,0 +1,43 @@
+
+   
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}[scale =0.5]
+\tikzstyle{every node}=[font=\small]
+\draw [dashed] (15.5,22) -- (15.5,15);
+\draw [dashed] (15.5,22) -- (19.25,18.25);
+\draw [dashed] (19.25,18.25) -- (15.5,14.5);
+\draw [dashed] (15.5,15) -- (15.5,14.25);
+\draw [dashed] (19.25,18.25) -- (11.75,18.25);
+\draw(15.5,22) arc[start angle =90,end angle =180,radius = 3.75];
+\draw(11.75,18.25) arc[start angle=180,end angle = 270,radius = 3.75];
+\draw(18,18.75) node {$\theta$};
+\draw(18,17.75) node{$\theta$};
+\draw [short] (15.5,22) -- (9.25,22);
+\draw [short] (15.5,14.5) -- (9.25,14.5);
+\draw [short] (10.75,21.75) -- (9.25,21.75);
+\draw [short] (10.5,21.5) -- (9.5,21.5);
+\draw [short] (10.25,21.25) -- (9.75,21.25);
+\draw [short] (9.25,22) -- (8.75,22);
+\draw [short] (10,22) -- (10.75,22.5);
+\draw [short] (10.75,22.5) -- (9.25,22.5);
+\draw [short] (9.25,22.5) -- (10,22);
+\draw [short] (15.5,14.5) -- (16,14.5);
+\draw [short] (15.25,14.5) -- (14.75,13.5);
+\draw [short] (16,14.5) -- (16.5,13.5);
+\draw [short] (14.75,13.5) -- (16.5,13.5);
+\draw [<->, >=Stealth] (11.5,22) -- (11.5,14.5);
+\draw [<->, >=Stealth] (18.5,19) -- (18,18.25);
+\draw [<->, >=Stealth] (18,18.25) -- (18.5,17.5);
+\draw [line width=0.7pt, short] (15.25,19.5) -- (18.75,21.5);
+\draw [line width=0.7pt, ->, >=Stealth] (15.25,19.5) -- (12,19.5);
+\node [font=\small ]at (10,18.5) {Water};
+\node [font=\small] at (20,21.5) {circular };
+\node [font=\small] at (19.75,21) {segment};
+\node [font=\small]at (19.75,20.5) {of radius R};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
