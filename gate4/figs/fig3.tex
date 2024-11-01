@@ -1,0 +1,45 @@
+
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+\draw (9.25,14) to[short] (9.5,14);
+\draw (9.25,13.5) to[short] (9.5,13.5);
+\draw (9.5,14) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (11.25,13.75);
+\draw (9.25,11) to[short] (9.5,11);
+\draw (9.25,10.5) to[short] (9.5,10.5);
+\draw (9.5,11) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (11.25,10.75);
+\draw (5.25,9.25) node[ieeestd not port, anchor=in](port){} (port.out) to[short] (7,9.25);
+\draw (port.in) to[short] (5,9.25);
+\draw (13.25,12.75) to[short] (13.5,12.75);
+\draw (13.25,12.25) to[short] (13.5,12.25);
+\draw (13.5,12.75) node[ieeestd or port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (15.25,12.5);
+\draw (11.25,13.75) to[short] (12.5,13.75);
+\draw (12.5,13.75) to[short] (13.25,13.75);
+\draw (13.25,13.75) to[short] (13.25,12.75);
+\draw (11.25,10.75) to[short] (13.25,10.75);
+\draw (13.25,12.25) to[short] (13.25,10.75);
+\draw (7,9.25) to[short] (9.25,9.25);
+\draw (9.25,10.5) to[short] (9.25,9.25);
+\draw (6.75,14) to[short] (8.75,14);
+\draw (6.75,14) to[short] (9.25,14);
+\draw (4.75,14) to[short] (4,14);
+\draw (9.25,13.5) to[short] (6.25,13.5);
+\draw (6.25,13.5) to[short] (6.25,12.75);
+\draw (6.25,12.75) to[short] (4,12.75);
+\draw (9.25,11) to[short] (4,11);
+\draw (5,14) node[ieeestd not port, anchor=in](port){} (port.out) to[short] (6.75,14);
+\draw (port.in) to[short] (4.75,14);
+\draw (4.5,14) to[crossing] (4.5,11.25);
+\draw (4.75,12.75) to[crossing] (4.75,9.25);
+\draw (5,9.25) to[short] (4.5,9.25);
+\node at (4.75,12.75) [circ] {};
+\node at (4.5,14) [circ] {};
+\node [font=\Large] at (4.25,14.25) {X};
+\node [font=\Large] at (4.25,13) {\textbf{Y}};
+\node [font=\Large] at (15.25,12.75) {Z};
+\draw (15.25,12.5) to[short] (16,12.5);
+\draw (4.5,11.25) to[short] (4.5,11);
+\draw [short] (4.5,11.25) -- (4.5,11);
+\end{circuitikz}
+}%
+\label{fig:my_label}

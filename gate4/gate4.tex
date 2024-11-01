@@ -1,0 +1,267 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\usepackage{circuitikz}
+
+\raggedbottom
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2015-EE-27-39}
+\author{EE24BTECH11065-spoorthi
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+
+\item The closed loop line integral
+\[
+\oint_{|z|=5} \frac{z^3 + z^2 + 8}{z + 2} \, dz
+\]
+evaluated counter-clockwise, is \hfill{[EE-2019]}
+\begin{multicols}{4}
+    
+
+\begin{enumerate}
+    \item (A) $+8j\pi$
+    \item (B) $-8j\pi$
+    \item (C) $-4j\pi$
+    \item (D) $+4j\pi$
+\end{enumerate}
+\end{multicols}
+
+\item A periodic function $f(t)$, with a period of $2\pi$, is represented as its Fourier series,
+\[
+f(t) = a_0 + \sum_{n=1}^{\infty} a_n \cos nt + \sum_{n=1}^{\infty} b_n \sin nt.
+\]
+If
+\[
+f(t) = \begin{cases} 
+      A \sin t, & 0 \leq t \leq \pi \\
+      0, & \pi < t < 2\pi 
+   \end{cases}
+\]
+the Fourier series coefficients $a_1$ and $b_1$ of $f(t)$ are\hfill{[EE-2019]}
+\begin{multicols}{2}
+    
+
+\begin{enumerate}
+    \item (A) $a_1 = \frac{A}{4}; \, b_1 = 0$
+    \item (B) $a_1 = \frac{A}{4}; \, b_1 = 0$
+    \item (C) $a_1 = 0; \, b_1 = \frac{A}{\pi}$
+    \item (D) $a_1 = 0; \, b_1 = \frac{4}{2}$
+\end{enumerate}
+\end{multicols}
+\item The asymptotic Bode magnitude plot of a minimum phase transfer function $G(s)$ is shown below.
+\begin{figure}[H]
+\centering
+\include{figs/fig5}
+
+\end{figure}
+
+Consider the following two statements.
+\begin{itemize}
+    \item Statement I: Transfer function $G(s)$ has three poles and one zero.
+    \item Statement II: At very high frequency ($\omega \to \infty$), the phase angle $\angle G(j\omega) = -\frac{3\pi}{2}$.
+\end{itemize}
+
+Which one of the following options is correct?\hfill{[EE-2019]}
+\begin{enumerate}
+    \item (A) Statement I is true and statement II is false.
+    \item (B) Statement I is false and statement II is true.
+    \item (C) Both the statements are true.
+    \item (D) Both the statements are false.
+\end{enumerate}
+
+\item The transfer function of a phase lead compensator is given by
+\[
+D(s) = \frac{3(s+1)}{s+\frac{1}{3}}.
+\]
+The frequency (in rad/sec), at which $\angle D(j\omega)$ is maximum, is\hfill{[EE-2019]}
+\begin{multicols}{4}
+    
+
+\begin{enumerate}
+    \item (A) $\frac{\sqrt{3}}{\sqrt{2}}$
+    \item (B) $\frac{1}{3\sqrt{2}}$
+    \item (C) $\sqrt{3}T$
+    \item (D) $\sqrt{3}T$
+\end{enumerate}
+\end{multicols}
+\item Consider a state-variable model of a system
+\[
+\dot{x}_1 = \begin{bmatrix} 0 & 1 \\ -\alpha & -2\beta \end{bmatrix} x_2 + \begin{bmatrix} 0 \\ \alpha \end{bmatrix} r
+\]
+where $y$ is the output, and $r$ is the input. The damping ratio $\xi$ and the undamped natural frequency $\omega_n$ (rad/sec) of the system are given by \hfill{[EE-2019]}
+\begin{multicols}{2}
+    
+
+\begin{enumerate}
+    \item (A) $\xi = \frac{\beta}{\sqrt{\alpha}}; \, \omega_n = \sqrt{\alpha}$
+    \item (B) $\xi = \sqrt{\alpha}; \, \omega_n = \frac{\beta}{\sqrt{\alpha}}$
+    \item (C) $\xi = \frac{\beta}{\alpha}; \, \omega_n = \sqrt{\beta}$
+    \item (D) $\xi = \sqrt{\beta}; \, \omega_n = \sqrt{\alpha}$
+\end{enumerate}
+\end{multicols}
+\item A moving coil instrument having a resistance of $10 \, \Omega$, gives a full-scale deflection when the current is $10 \, \text{mA}$. What should be the value of the series resistance, so that it can be used as a voltmeter for measuring potential difference up to $100 \, \text{V}$? \\. \hfill{[EE-2019]}
+\begin{multicols}{4}
+    
+
+\begin{enumerate}
+    \item (A) $9 \, \Omega$
+    \item (B) $99 \, \Omega$
+    \item (C) $990 \, \Omega$
+    \item (D) $9990 \, \Omega$
+\end{enumerate}
+\end{multicols}
+
+
+\item The enhancement type MOSFET in the circuit below operates according to the square law. $\mu_n C_{\text{ox}} = 100 \, \mu \text{A}/\text{V}^2$, the threshold voltage ($V_T$) is 500 mV. Ignore channel length modulation. The output voltage $V_{\text{out}}$ is \hfill{[EE-2019]}
+\begin{figure}[H]
+\centering
+\include{figs/fig1}
+\end{figure}
+\begin{multicols}{4}
+    
+
+
+\begin{enumerate}
+    \item (A) 100 mV
+    \item (B) 500 mV
+    \item (C) 600 mV
+    \item (D) 2 V
+\end{enumerate}
+\end{multicols}
+\item In the circuit below, the operational amplifier is ideal. If $V_1 = 10 \, \text{mV}$ and $V_2 = 50 \, \text{mV}$, the output voltage ($V_{\text{out}}$) is \hfill{[EE-2019]}
+\begin{figure}[H]
+\centering
+\include{figs/fig2}
+\end{figure}
+\begin{multicols}{4}
+    
+
+
+\begin{enumerate}
+    \item (A) 100 mV
+    \item (B) 400 mV
+    \item (C) 500 mV
+    \item (D) 600 mV
+\end{enumerate}
+\end{multicols}
+
+
+
+    \item The output expression for the Karnaugh map shown below is \hfill{[EE-2019]}
+    \begin{figure}[H]
+\centering
+\include{figs/fig3}
+\end{figure}
+\begin{multicols}{2}
+    
+
+    \begin{enumerate}
+        \item[(A)] $\overline{Q}R + S$
+        \item[(B)] $Q\overline{R} + \overline{S}$
+        \item[(C)] $QR + S$
+        \item[(D)] $QR + \overline{S}$
+    \end{enumerate}
+    \end{multicols}
+    \item In the circuit shown below, $X$ and $Y$ are digital inputs, and $Z$ is a digital output. The equivalent circuit is a \hfill{[EE-2019]}
+    \begin{figure}[H]
+\centering
+    \include{figs/fig4}
+    \end{figure}
+    \begin{multicols}{4}
+        
+    
+    \begin{enumerate}
+        \item[(A)] NAND gate
+        \item[(B)] NOR gate
+        \item[(C)] XOR gate
+        \item[(D)] XNOR gate
+    \end{enumerate}
+    \end{multicols}
+    \item A DC-DC buck converter operates in continuous conduction mode. It has 48 V input voltage, and it feeds a resistive load of 24 $\Omega$. The switching frequency of the converter is 250 Hz. If switch-on duration is 1 ms, the load power is \hfill{[EE-2019]}
+    \begin{multicols}{4}
+        
+    
+    \begin{enumerate}
+        \item[(A)] 6 W
+        \item[(B)] 12 W
+        \item[(C)] 24 W
+        \item[(D)] 48 W
+    \end{enumerate}
+    \end{multicols}
+    \item The line currents of a three-phase four wire system are square waves with amplitude of 100 A. These three currents are phase shifted by 120° with respect to each other. The rms value of neutral current is \hfill{[EE-2019]}
+    \begin{multicols}{4}
+        
+    
+    \begin{enumerate}
+        \item[(A)] 0 A
+        \item[(B)] $\frac{100}{\sqrt{3}}$ A
+        \item[(C)] 100 A
+        \item[(D)] 300 A
+    \end{enumerate}
+    \end{multicols}
+    \item If $A = 2x i + 3y j + 4z k$ and $u = x^2 + y^2 + z^2$, then $\text{div}(uA)$ at (1, 1, 1) is \underline{\hspace{2cm}}. \\.\hfill{[EE-2019]}
+
+
+
+
+\end{enumerate}
+
+
+
+\end{document}
+
+

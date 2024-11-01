@@ -1,0 +1,36 @@
+
+
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\footnotesize]
+\draw [ line width=0.5pt](11.75,22) to[short] (13.5,22);
+\draw [ line width=0.5pt](12.75,22) to[short] (12.75,19.5);
+\draw [ line width=0.5pt](12.75,19.5) to[american current source] (12.75,16.75);
+\draw [ line width=0.5pt](10.75,16.75) to[short, -o] (14.75,16.75) ;
+\node at (12.75,16.75) [circ] {};
+\draw [ line width=0.5pt](12.75,16.75) to[short] (12.75,15.75);
+\draw [ line width=0.5pt](10.75,16.75) to[short] (10.75,15);
+\draw [ line width=0.5pt](12.75,15.75) to[short] (11.75,15.75);
+\draw [ line width=0.5pt](11.75,15.75) to[short] (11.75,14.25);
+\draw [ line width=0.5pt](11.75,14.25) to[short] (12.75,14.25);
+\draw [ line width=0.5pt](12.75,14.25) to[short] (12.75,13.5);
+\draw [ line width=0.5pt](10.75,15) to[short] (11.5,15);
+\draw [ line width=0.5pt](11.5,15.75) to[short] (11.5,14.25);
+\draw [line width=0.5pt, ->, >=Stealth] (12.25,14.25) -- (12.5,14.25);
+\draw [line width=0.5pt](12.75,13.5) to (12.75,12.5) node[ground]{};
+\node [font=\small] at (12.5,22.5) {V};
+\node [font=\footnotesize] at (12.75,22.25) {DO};
+\node [font=\small] at (13.75,18) {5 $\mu A$};
+\node [font=\small] at (13.5,15.5) {W};
+\node [font=\small] at (13.5,15) {L};
+\node [font=\small] at (14.25,15.25) {=};
+\node [font=\small] at (15.25,15.5) {$10\mu m$};
+\node [font=\small] at (15.25,15) {$1\mu m$};
+\draw [line width=0.5pt, short] (13.25,15.25) -- (13.75,15.25);
+\draw [line width=0.5pt, short] (14.75,15.25) -- (16,15.25);
+\node [font=\normalsize] at (15.5,16.75) {V};
+\node [font=\footnotesize] at (15.75,16.5) {out};
+\end{circuitikz}
+}%
+
+
