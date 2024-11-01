@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  1 NOV 2024 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  1 NOV 2024 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1919,6 +1919,13 @@ dist/fonts/enc/dvips/base/8r.enc}
 
 
 
+
+
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:my_label}{{\caption@xref {fig:my_label}{ on input line 50}}{3}{}{
+figure.caption.3}{}}
+
+
 ]
 \openout2 = `figs/fig3.aux'.
 
@@ -1931,24 +1938,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
  (./figs/fig4.tex) [4
 
 
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:my_label}{{\caption@xref {fig:my_label}{ on input line 50}}{4}{}{
-figure.caption.3}{}}
-
-
-
 \newlabel{fig:my_label}{{\caption@xref {fig:my_label}{ on input line 45}}{4}{}{
 figure.caption.4}{}}
 
 
-] [5
 
-
-\newlabel{fig:my_label}{{\caption@xref {fig:my_label}{ on input line 48}}{5}{}{
+\newlabel{fig:my_label}{{\caption@xref {fig:my_label}{ on input line 48}}{4}{}{
 figure.caption.5}{}}
 
 
-] (./gate4.aux (./figs/fig5.aux) (./figs/fig1.aux) (./figs/fig2.aux)
+] [5] (./gate4.aux (./figs/fig5.aux) (./figs/fig1.aux) (./figs/fig2.aux)
 (./figs/fig3.aux) (./figs/fig4.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1965,11 +1964,11 @@ Package rerunfilecheck Info: Checksums for `gate4.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 54947 strings out of 474222
- 1309240 string characters out of 5748734
- 1976975 words of memory out of 5000000
+ 54965 strings out of 474222
+ 1309363 string characters out of 5748734
+ 1974975 words of memory out of 5000000
  76304 multiletter control sequences out of 15000+600000
- 648953 words of font info for 239 fonts, out of 8000000 for 9000
+ 650269 words of font info for 241 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,11n,109p,1195b,1254s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
@@ -1980,10 +1979,10 @@ ts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gate4.pdf (5 pages, 77024 bytes).
+Output written on gate4.pdf (5 pages, 78007 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 72 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
