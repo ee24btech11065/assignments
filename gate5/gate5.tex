@@ -1,0 +1,222 @@
+
+
+
+
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{pgfplots}
+
+
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2012-EE-1-13}
+\author{EE24BTECH11065 - spoorthi yellamanchali}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+    \item The people \underline{\hspace{2cm}} were at the demonstration were from all sections of society.\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item whose
+        \item which
+        \item who
+        \item whom
+    \end{enumerate}
+    \item. 
+    \begin{figure}[H] 
+    \centering 
+    \include{figs/fig1} 
+    \end{figure} 
+    A transparent square sheet shown above is folded along the dotted line.The folded sheet will lok like \underline{\hspace{2cm}}.\hfill{[EE-2021]}
+          \begin{enumerate}
+              \item. 
+              \begin{figure}[H] 
+              
+              \include{figs/fig2} 
+              \end{figure}
+\item.
+\begin{figure}[H] 
+
+\include{figs/fig3} 
+\end{figure}
+\item. 
+\begin{figure}[H] 
+
+\include{figs/fig4} 
+\end{figure}
+\item. 
+\begin{figure}[H] 
+
+\include{figs/fig5} 
+\end{figure}
+          \end{enumerate}
+
+           \item For a regular polygon having 10 sides, the interior angle between the sides of the polygon, in degrees, is:\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item 396
+        \item 324
+        \item 216
+        \item 144
+    \end{enumerate}
+    
+    \item Which one of the following numbers is exactly divisible by $11^{13} + 1$?\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item $11^{26} + 1$
+        \item $11^{33} + 1$
+        \item $11^{39} - 1$
+        \item $11^{52} - 1$
+    \end{enumerate}
+    
+    \item $Oasis$ is to $sand$ as $island$ is to \underline{\hspace{2cm}}\\
+    
+    Which one of the following options maintains a similar logical relation in the above sentence?\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item Stone
+        \item Land
+        \item Water
+        \item Mountain
+    \end{enumerate}
+    \item The importance of sleep is often overlooked by students when they are preparing for exams. Research has consistently shown that sleep deprivation greatly reduces the ability to recall the material learnt. Hence, cutting down on sleep to study longer hours can be counterproductive.\\
+    Which one of the following statements is the CORRECT inference from the above passage?\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item Sleeping well alone is enough to prepare for an exam. Studying has lesser benefit.
+        \item Students are efficient and are not wrong in thinking that sleep is a waste of time.
+        \item If a student is extremely well prepared for an exam, he needs little or no sleep.
+        \item To do well in an exam, adequate sleep must be part of the preparation.
+    \end{enumerate}
+
+    \item. \begin{figure}[H]
+            \centering
+    \include{figs/fig6}
+    \end{figure}
+    In the figure shown above, each inside square is formed by joining the midpoints of the sides of the next larger square. The area of the smallest square (shaded) as shown, in cm$^2$, is: \hfill{[EE-2021]}
+    \begin{enumerate}
+        \item 12.50
+        \item 6.25
+        \item 3.125
+        \item 1.5625
+    \end{enumerate}
+
+    \item Let $X$ be a continuous random variable denoting the temperature measured. The range of temperature is $[0, 100]$ degrees Celsius and let the probability density function of $X$ be $f(x) = 0.01$ for $0 \leq X \leq 100$.\\
+    The mean of $X$ is \underline{\hspace{2cm}} \hfill{[EE-2021]}
+    \begin{enumerate}
+        \item 2.5
+        \item 5.0
+        \item 25.0
+        \item 50.0
+    \end{enumerate}
+
+    \item. \begin{figure}[H]
+        \centering
+        
+   \include{figs/fig7}
+   \end{figure}
+    The number of students passing or failing in an exam for a particular subject are presented in the bar chart above. Students who pass the exam cannot appear for the exam again. Students who fail the exam in the first attempt must appear for the exam in the following year. Students always pass the exam in their second attempt.
+
+The number of students who took the exam for the first time in year 2 and year 3 respectively, are \underline{\hspace{2cm}}.\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item  65 and 53
+        \item  60 and 50
+        \item  55 and 53
+        \item  55 and 48
+    \end{enumerate}
+
+\item Seven cars $P$, $Q$, $R$, $S$, $T$, $U$ and $V$ are parked in a row not necessarily in that order. The cars $T$ and $U$ should be parked next to each other. The cars $S$ and $V$ also should be parked next to each other, whereas $P$ and $Q$ cannot be parked next to each other. $Q$ and $S$ must be parked next to each other. $R$ is parked to the immediate right of $V$. $T$ is parked to the left of $U$.
+
+Based on the above statements, the only INCORRECT option given below is: \\. \hfill{[EE-2021]}
+    \begin{enumerate}
+        \item  There are two cars parked in between $Q$ and $V$.
+        \item  $Q$ and $R$ are not parked together.
+        \item  $V$ is the only car parked in between $S$ and $R$.
+        \item  Car $P$ is parked at the extreme end.
+    \end{enumerate}
+\item Let $p$ and $q$ be real numbers such that $p^2 + q^2 = 1$. The eigenvalues of the matrix\\.  \hfill{[EE-2021]}
+\[
+\begin{pmatrix}
+p & q \\
+q & -p
+\end{pmatrix}
+\]
+are
+    \begin{enumerate}
+        \item  1 and 1
+        \item  1 and -1
+        \item  $i$ and $-i$
+        \item  $pq$ and $-pq$
+    \end{enumerate}
+
+\item Let $p(z) = z^3 + (1 + j)z^2 + (2 + j)z + 3$, where $z$ is a complex number. Which one of the following is true?\hfill{[EE-2021]}
+    \begin{enumerate}
+        \item  $\text{conjugate}\{p(z)\} = p(\text{conjugate}\{z\})$ for all $z$
+        \item  The sum of the roots of $p(z) = 0$ is a real number
+        \item  The complex roots of the equation $p(z) = 0$ come in conjugate pairs
+        \item  All the roots cannot be real
+    \end{enumerate}
+
+\item Let $f(x)$ be a real-valued function such that $f^\prime(x_0) = 0$ for some $x_0 \in (0, 1)$, and $f^\prime\prime(x) > 0$ for all $x \in (0, 1)$. Then $f(x)$ has \hfill{[EE-2021]}
+    \begin{enumerate}
+        \item  no local minimum in $(0, 1)$
+        \item  one local maximum in $(0, 1)$
+        \item  exactly one local minimum in $(0, 1)$
+        \item  two distinct local minima in $(0, 1)$
+    \end{enumerate}
+    
+
+\end{enumerate}
+
+
+\end{document}
+
+

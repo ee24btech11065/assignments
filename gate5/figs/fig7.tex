@@ -1,0 +1,37 @@
+ \pgfplotsset{compat=1.18}
+   
+    
+   
+
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            ybar,
+            bar width=15pt,
+            symbolic x coords={Year 1, Year 2, Year 3},
+            xtick=data,
+            ymin=0, ymax=70,
+            ylabel={},
+            ytick={0,10,20,30,40,50,60,70},
+            legend style={at={(0.5,-0.15)},
+                          anchor=north,legend columns=-1},
+            nodes near coords,
+            enlarge x limits=0.5,
+            title={Electrical Engineering (EE)},
+            ylabel near ticks
+        ]
+            % Pass bar (striped)
+            \addplot[
+                pattern=horizontal lines,
+                pattern color=black
+            ] coordinates {(Year 1,50) (Year 2,60) (Year 3,50)};
+            
+            % Fail bar (solid black)
+            \addplot[
+                fill=black
+            ] coordinates {(Year 1,10) (Year 2,5) (Year 3,3)};
+            
+            \legend{Pass, Fail}
+        \end{axis}
+    \end{tikzpicture}
+
+ 
