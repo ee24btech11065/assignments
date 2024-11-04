@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  4 NOV 2024 19:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  4 NOV 2024 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2007,8 +2007,11 @@ File: ts1txr.fd 2000/12/15 v3.1
 (./figs/fig2.tex)
 \openout2 = `figs/fig3.aux'.
 
- (./figs/fig3.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/s
-hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+ (./figs/fig3.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}
 
 
 
@@ -2019,8 +2022,7 @@ hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 ]
 \openout2 = `figs/fig4.aux'.
 
-
-(./figs/fig4.tex)
+ (./figs/fig4.tex)
 \openout2 = `figs/fig5.aux'.
 
  (./figs/fig5.tex)
@@ -2084,7 +2086,7 @@ Package rerunfilecheck Info: Checksums for `gate5.out':
 Here is how much of TeX's memory you used:
  63231 strings out of 474222
  1603791 string characters out of 5748734
- 2290483 words of memory out of 5000000
+ 2291483 words of memory out of 5000000
  84451 multiletter control sequences out of 15000+600000
  620795 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2095,7 +2097,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on gate5.pdf (5 pages, 52298 bytes).
+Output written on gate5.pdf (5 pages, 52441 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams
